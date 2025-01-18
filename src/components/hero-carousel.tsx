@@ -9,7 +9,11 @@ import {
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-const HeroSection = () => {
+const HeroSection = ({
+  heroImages,
+}: {
+  heroImages: { src: string; title: string }[];
+}) => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -20,21 +24,6 @@ const HeroSection = () => {
       setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
-
-  const heroImages = [
-    {
-      src: "/hero4.jpg",
-      title: "Hero image 1",
-    },
-    {
-      src: "/hero2.jpg",
-      title: "Hero image 2",
-    },
-    {
-      src: "/hero3.jpg",
-      title: "Hero image 3",
-    },
-  ];
   return (
     <section className="relative h-[80vh]">
       <Carousel
