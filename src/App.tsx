@@ -1,7 +1,7 @@
-import OrgChartTree from "./components/tree/orgchartree";
+import HeroSection from "./components/hero-carousel";
 
 const App = () => {
-  return <OrgChartTree />;
+  return <HeroSection />;
 };
 
 export default App;
