@@ -45,18 +45,23 @@ const InteractiveSections = ({
                     "opacity-100",
                     "hover:shadow-lg"
                   )}
+                  style={{ position: "relative", zIndex: 0 }}
                 >
                   <div className="p-4 flex items-center gap-4">
                     <div className="flex-1 min-w-0">
                       <motion.h3
                         layout="position"
-                        className={cn("font-medium text-lg", "text-foreground")}
+                        className={cn(
+                          "font-medium text-4xl py-2",
+                          "text-foreground"
+                        )}
                       >
                         {section.title}
                       </motion.h3>
                       <motion.p
                         layout="position"
                         className={cn("text-sm text-muted-foreground truncate")}
+                        dragListener={false}
                       >
                         {section.content}
                       </motion.p>

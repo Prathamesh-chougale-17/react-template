@@ -1,5 +1,6 @@
 import InteractiveSections from "./components/draggable-components";
 import HeroSection from "./components/hero-carousel";
+import TechSection from "./components/tech-section";
 import OrgChartTree from "./components/tree/orgchartree";
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
           content: (
             <HeroSection
               heroImages={[
-                { src: "/hero1.jpg", title: "Hero 1" },
+                { src: "/hero4.jpg", title: "Hero 1" },
                 { src: "/hero2.jpg", title: "Hero 2" },
                 { src: "/hero3.jpg", title: "Hero 3" },
               ]}
@@ -23,6 +24,11 @@ const App = () => {
           id: 2,
           title: "Section 2",
           content: <OrgChartTree />,
+        },
+        {
+          id: 3,
+          title: "Section 3",
+          content: <TechSection />,
         },
       ]}
     />
