@@ -58,13 +58,13 @@ const InteractiveSections = ({
                       >
                         {section.title}
                       </motion.h3>
-                      <motion.p
+                      <motion.div
                         layout="position"
                         className={cn("text-sm text-muted-foreground truncate")}
                         dragListener={false}
                       >
                         {section.content}
-                      </motion.p>
+                      </motion.div>
                     </div>
                   </div>
                 </Card>

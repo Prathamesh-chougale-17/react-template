@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root::-webkit-scrollbar {
+  display: none;
+} 
+
 :root{
-  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 @layer base {
@@ -68,4 +73,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.dark .rd3t-link {
+  stroke: white !important;
 }
