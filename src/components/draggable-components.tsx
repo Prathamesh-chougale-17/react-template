@@ -61,7 +61,6 @@ const InteractiveSections = ({
                       <motion.div
                         layout="position"
                         className={cn("text-sm text-muted-foreground truncate")}
-                        dragListener={false}
                       >
                         {section.content}
                       </motion.div>
